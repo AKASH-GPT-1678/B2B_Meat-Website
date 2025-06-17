@@ -73,7 +73,7 @@ export default function PrivacyPolicyPage() {
           We may use cookies and other technologies to collect data about your usage of our platform and to enable personalized services and an improved experience for your team.
         </p>
 
-        <h2 className="text-2xl font-semibold mt-6">8. Children's Privacy</h2>
+        <h2 className="text-2xl font-semibold mt-6">8. Childrens Privacy</h2>
         <p className="mb-4">
           Our platform is not designed for children under the age of 16, and we do not knowingly collect information from children.
         </p>
