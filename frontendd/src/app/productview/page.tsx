@@ -2,14 +2,14 @@
 import React from 'react'
 import Image from 'next/image'
 import Chicken from "../../../assets/broiler.png"
-import { useSelector } from 'react-redux'
-import { Initials } from '../Componemts/redux'
-import { TiTick } from "react-icons/ti";
-import { ImCross } from "react-icons/im";
+// import { useSelector } from 'react-redux'
+// import { Initials } from '../Componemts/redux'
+// import { TiTick } from "react-icons/ti";
+// import { ImCross } from "react-icons/im";
 
 const page = () => {
     
-  const isLogin = useSelector((state: { user: Initials }) => state.user.sigUpMode);
+//   const isLogin = useSelector((state: { user: Initials }) => state.user.sigUpMode);
     return (
         <div>
 
@@ -41,7 +41,7 @@ const page = () => {
                     </div>
 
                     <div>
-                        <p className='flex flex-row text-xl gap-2 items-center font-semibold'>Exportable {isLogin ? <TiTick size={20} fill='green' className='mt-2' /> : <ImCross size={20}  fill='red' className='mt-2'/>}</p>
+                        {/* <p className='flex flex-row text-xl gap-2 items-center font-semibold'>Exportable {isLogin ? <TiTick size={20} fill='green' className='mt-2' /> : <ImCross size={20}  fill='red' className='mt-2'/>}</p> */}
                         <p>Verfied Seller</p>
                     </div>
 
