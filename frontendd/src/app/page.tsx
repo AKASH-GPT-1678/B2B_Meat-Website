@@ -1,14 +1,23 @@
-// import Image from "next/image";
-import {Middle} from "./Componemts/Middle";
+"use client";
+import { Middle } from "./Componemts/Middle";
 import { Header } from "./Componemts/Header";
 import { Categories } from "./Componemts/Categories";
-import {DisplayProducts} from "./Componemts/Mydisplay";
+import { DisplayProducts } from "./Componemts/Mydisplay";
+import { useDispatch, useSelector } from "react-redux";
+import { Initials, signUpMode } from "./Componemts/redux";
+import { SignUp } from "./Componemts/SignUp";
+
 export default function Home() {
+  const dispatch = useDispatch();
+  const isLogin = useSelector((state: { user: Initials }) => state.user.sigUpMode);
+
   return (
-        <div className="relative">
-      {/* Blurred Background Layer */}
+    <div className="relative">
+
       <div className="">
         <Header />
+
+
         <Middle />
         <div className="flex justify-center">
           <Categories />
@@ -18,9 +27,20 @@ export default function Home() {
       <div className="flex flex-col justify-center items-center">
         <p>Only Premium Buyers can contact and view Sellers</p>
         <p>Get Premium</p>
+
       </div>
 
-     
+
+
+        {isLogin ? <SignUp /> : null}
+
+ 
+
+      {/* <SignUp/> */}
+
+
+
+
 
 
 
@@ -31,6 +51,6 @@ export default function Home() {
       <DisplayProducts category="Farmers & Sellers Spotlight" />
     </div>
 
-   
+
   );
 }

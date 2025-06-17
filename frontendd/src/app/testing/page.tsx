@@ -1,4 +1,5 @@
 import React from 'react'
+import { Login } from '../Componemts/Login'
 
 
 const page = () => {
@@ -7,6 +8,7 @@ const page = () => {
         {/* <SignUp/> */}
 
         {/* <DisplayProducts/> */}
+        <Login/>
       
     </div>
   )
