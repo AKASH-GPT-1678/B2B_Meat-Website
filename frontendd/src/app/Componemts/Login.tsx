@@ -1,11 +1,11 @@
 import React from 'react'
-import { useDispatch, useSelector } from 'react-redux';
-import { Initials, loginMode } from './redux';
+import { useDispatch } from 'react-redux';
+import {loginMode } from './redux';
 import { IoIosArrowBack } from "react-icons/io";
 export const Login = () => {
 
     const dispatch = useDispatch();
-    const isLogin = useSelector((state: { user: Initials }) => state.user.loginMode);
+
 
     return (
         <div>

@@ -2,13 +2,13 @@
 import React from 'react'
 import Image from 'next/image'
 import Chicken from "../../../assets/broiler.png"
-import { useDispatch , useSelector } from 'react-redux'
+import { useSelector } from 'react-redux'
 import { Initials } from '../Componemts/redux'
 import { TiTick } from "react-icons/ti";
 import { ImCross } from "react-icons/im";
 
 const page = () => {
-      const dispatch = useDispatch();  
+    
   const isLogin = useSelector((state: { user: Initials }) => state.user.sigUpMode);
     return (
         <div>

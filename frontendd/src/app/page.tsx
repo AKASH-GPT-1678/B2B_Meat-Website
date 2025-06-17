@@ -3,12 +3,12 @@ import { Middle } from "./Componemts/Middle";
 import { Header } from "./Componemts/Header";
 import { Categories } from "./Componemts/Categories";
 import { DisplayProducts } from "./Componemts/Mydisplay";
-import { useDispatch, useSelector } from "react-redux";
-import { Initials, signUpMode } from "./Componemts/redux";
+import { useSelector } from "react-redux";
+import { Initials } from "./Componemts/redux";
 import { SignUp } from "./Componemts/SignUp";
 
 export default function Home() {
-  const dispatch = useDispatch();
+  
   const isLogin = useSelector((state: { user: Initials }) => state.user.sigUpMode);
 
   return (
