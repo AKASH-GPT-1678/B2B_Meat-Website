@@ -1,7 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
 import Broiler from "../../../assets/broiler.png"
-import { TiTickOutline } from "react-icons/ti";
 import { TiTick } from "react-icons/ti";
 import { ImCross } from "react-icons/im";
 

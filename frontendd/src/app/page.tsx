@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import {Middle} from "./Componemts/Middle";
 import { Header } from "./Componemts/Header";
 import { Categories } from "./Componemts/Categories";
